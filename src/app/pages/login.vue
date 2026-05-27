@@ -139,7 +139,7 @@ const totp = ref<string>('');
 const { data: authMethods } = await useFetch('/api/auth/methods');
 
 const _submit = useSubmit(
-  '/api/session',
+  '/api/auth/password',
   {
     method: 'post',
   },
